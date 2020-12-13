@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appten';
+  getuserdetails(value)
+  {
+    console.warn(value)
+  }
 }
