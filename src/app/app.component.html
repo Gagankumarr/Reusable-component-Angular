@@ -1,18 +1,9 @@
-<app-header></app-header>
-<div style="padding-left: 230px;">
-<h2>Simple Form </h2>
-<form  #simpleform="ngForm" (ngSubmit)="getuserdetails(simpleform.value)">
-  <input type="text" ngModel name="username" placeholder="Enter name">
-  <br>
-  <br>
-  <input type="text" ngModel name="password" placeholder="Enter password">
-  <br>
-  <br>
-  <input type="text" ngModel name="mailId" placeholder="Enter email">
-  <br>
-  <br>
-  <button>Get user values</button>
+<h1 style="color: pink"> header1</h1>
+<h1 [style.color]="color"> header2</h1>
+<!-- <h1 [style.color]="color"> header3</h1> -->
 
-</form>
-</div>
-<app-footer></app-footer>
+<button (click)="get_the_color()">Update the color on clicking the button</button>
+
+<!-- conditional style binding -->
+
+<h1 [style.color]="err?'red':'green'">Conditional styling</h1>

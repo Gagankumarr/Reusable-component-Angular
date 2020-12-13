@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appten';
-  getuserdetails(value)
-  {
-    console.warn(value)
+  color="blue";
+  err=false;
+  get_the_color(){
+    this.color="red"
   }
 }
