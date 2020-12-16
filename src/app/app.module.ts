@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import {MatSliderModule} from '@angular/material/slider';
+import { UsersComponent } from './users/users.component';
 @NgModule({
   declarations: [
     AppComponent,
+    UsersComponent,
     
   ],
   imports: [
@@ -16,7 +19,8 @@ import {MatButtonModule} from '@angular/material/button'
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
