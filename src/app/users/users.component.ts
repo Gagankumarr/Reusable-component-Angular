@@ -8,6 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 export class UsersComponent implements OnInit {
 
    @Input() name
+  //  @Input() age
   constructor() { }
 
   ngOnInit(): void {

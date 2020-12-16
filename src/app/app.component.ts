@@ -7,5 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appten';
-  data='A parent component currently running in child component'
+  data=[
+    {
+      name:'bruce',
+      age:54,
+    },
+    {
+      name:'sam',
+      age:33,
+    },
+    {
+      name:'loki',
+      age:65,
+    }
+  ]
+  
 }

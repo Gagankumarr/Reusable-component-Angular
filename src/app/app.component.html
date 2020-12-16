@@ -1,3 +1,5 @@
 <h1>Child component recieving data from parent component.</h1>
+<div *ngFor="let item of data">
+    <app-users [name]="item"></app-users>
+</div>
 
-<app-users [name]="data"></app-users>
